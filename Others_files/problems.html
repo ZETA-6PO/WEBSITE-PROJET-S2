@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Problèmes</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">
+            <img width="450vh" class = "logo" src="LogoHypeHop2.png" alt="">
+        </h1>
+        <nav class="navbar">
+            <a href="../index.html">Acceuil</a>
+            <a href="liensutiles.html">Liens Utiles</a>
+            <a href="chronologie.html">Chronologie</a>
+            <a class="actual" href="">Problèmes rencontrés</a>
+            <a href="error.html">Accéder au Jeu</a>
+        </nav>
+    </header>
+    <main>
+        <div class="divMain">
+            <div class="texte">
+                <span class="subtitles">Problèmes rencontrés :</span> <br> 
+                <ul>
+                    <li>Merge de branches du git</li>
+                    <li>Transition entre les lieux intérieurs et extérieurs</li>
+                    <li>Persistance des données</li>
+                    <li>Système de combat</li>
+                    <li>Multijoueur</li>
+                    <li>Animations</li>
+                    <li>Système de sons</li>
+                    <li>Implémentation des quêtes</li>
+                    <li>Transparence des batîments</li>
+                </ul>
+                <br>
+                <span class="subtitles">Solutions à ces problèmes :</span> <br> 
+                <ul>
+                    <li><span class="titleProbleme">Merge des branches :</span> malgré avoir mis en place une organisation très rigoureuse, il nous a parfois fallut gérer des conflits entre différentes branches du Git.</li>
+                    <li><span class="titleProbleme">Persistance des données :</span> Nous nous sommes rendu compte que le personnage perdait tous ses attributs ou item en passant d'un scène du jeu à une autre. Etant donné le nombre de scène que rencontre le personnage au corus du jeu, il a fallut réglér ce problème en mettant en place un système de persistance de données.</li>
+                    <li><span class="titleProbleme">Système de combat :</span> Il nous a fallut dissocier le combat multijoueur et le combat "solo" dans le mode histoire. Cela est passé par de nombreux réajustement et un fonctionnement parfois bien différents sur certains aspect pour réussir à avoir un résultat équivalent.</li>
+                    <li><span class="titleProbleme">Multijoueur :</span>l'implémentation du multijoueur s'est montrée bien différente du reste du jeu. Il nous a fallut tout apprendre et comprendre du fonctionnement d'un mode multijoueurs et nous avont rencontrés de nombreux problèmes quand à son implémentation, problèmes que nous n'aurions pas rencontrés lors de l'implémentation du mode histoire.</li>
+                    <li><span class="titleProbleme">Animations :</span> Pour animer les PNJ et en particulier les voitures, de nombreux problèmes sont apparus quant à l'implémentation et l'algorithmie qui en découlait. En effet, compte tenu du nombre de virages différents qu'une voitures peut réaliser (8) il nous a fallu trouver des méthodes permettant de dissocier chacun d'entre eux afin que les voitures fassent les bonnes animations aux bons moments. Nous avons trouvé la solutions à ces problèmes en schématisant à l'écrit chacunes des situations et en imaginant différents algorithme qui pourraient solutionner cela, jusqu'à en trouver un optimal.</li>
+                    <li>Système de son : afin de faire en sorte que chaque musique se déclence au bon moment, nous avons du créer un manager de son qui s'occupe de jouer/couper le son et différencier les musiques de fond des bruitages</li>
+                    <li><span class="titleProbleme">Implémentation des quêtes :</span> En ce qui concerne l'implémentation des quêtes le problème majeur residait dans le fait de faire fonctionner l'ensemble de nos fonctionnalités à l'unisson. Nous avons donc du faire un script commun à toutes les quêtes nommé "quest" puis chaque quêtes possedant sont script dérivé de ce script quest et chaque quêtes avait son scriptable object modulable à souhait. En suite chaque quête est une grande suite de conditions qui gèrent quelles sont les prochaines étapes à faire pour le joueur</li>
+                    <li><span class="titleProbleme">Transparence des batîments :</span> Notre objectif en ajoutant cette feature était de voir le joueur lorsqu'il passe dérière un batîment. Pour ce faire nous avions besoin de changer l'opacité de la TileMap sur lequelle se trouve le haut du batîments lorsque l'on passe derrière. Nous avons donc du faire une TileMap différente pour chaque batîments pour que l'opacité du batîment ne soit changée que pour le bulding en question et non pour l'ensemble des immeubles.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4>
+            
+        </h4>
+    </footer>
+</body>
+</html>
